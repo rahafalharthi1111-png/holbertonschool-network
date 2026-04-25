@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Display all active IPv4 addresses on this machine (including localhost)
+
+ifconfig | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
